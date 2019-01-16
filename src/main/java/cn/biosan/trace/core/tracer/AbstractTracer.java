@@ -45,21 +45,21 @@ public abstract class AbstractTracer {
      */
     public void serverSend(String resultCode) {
         /** 从ThreadLocal中获取span信息 **/
-        try {
-            SofaTraceContext sofaTraceContext = SofaTraceContextHolder.getSofaTraceContext();
-            SofaTracerSpan serverSpan = sofaTraceContext.pop();
-            if (serverSpan == null) {
-                return;
-            }
-            //log
-            serverSpan.log(LogData.SERVER_SEND_EVENT_VALUE);
-            // 结果码
-            serverSpan.setTag(CommonSpanTags.RESULT_CODE, resultCode);
-            serverSpan.finish();
-        } finally {
-            //记得处理完成要清空 TL
-            this.clearTreadLocalContext();
-        }
+//        try {
+//            SofaTraceContext sofaTraceContext = SofaTraceContextHolder.getSofaTraceContext();
+//            SofaTracerSpan serverSpan = sofaTraceContext.pop();
+//            if (serverSpan == null) {
+//                return;
+//            }
+//            //log
+//            serverSpan.log(LogData.SERVER_SEND_EVENT_VALUE);
+//            // 结果码
+//            serverSpan.setTag(CommonSpanTags.RESULT_CODE, resultCode);
+//            serverSpan.finish();
+//        } finally {
+//            //记得处理完成要清空 TL
+//            this.clearTreadLocalContext();
+//        }
     }
 
 }
