@@ -1,5 +1,6 @@
 package cn.biosan.trace.core.span;
 
+import cn.biosan.trace.core.utils.StringUtils;
 import io.opentracing.Span;
 import io.opentracing.SpanContext;
 import io.opentracing.tag.Tag;
@@ -17,6 +18,19 @@ import java.util.Map;
  */
 public class TracerSpan implements Span {
 
+    /***
+     *
+     * report时才有意义:摘要日志类型,日志能够正确打印的关键信息:当前 span 的日志类型,如:客户端为 rpc-client-digest.log,服务端为 rpc-server-digest.log
+     */
+    private String logType = StringUtils.EMPTY_STRING;
+
+    public String getLogType() {
+        return logType;
+    }
+
+    public void setLogType(String logType) {
+        this.logType = logType;
+    }
 
     @Override
     public SpanContext context() {

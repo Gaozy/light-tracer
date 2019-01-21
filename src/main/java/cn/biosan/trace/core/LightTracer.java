@@ -1,5 +1,6 @@
 package cn.biosan.trace.core;
 
+import cn.biosan.trace.core.reporter.Reporter;
 import io.opentracing.*;
 import io.opentracing.propagation.Format;
 
@@ -12,7 +13,22 @@ import io.opentracing.propagation.Format;
  * @Package cn.biosan.trace.core.tracer
  * @date 2019/1/7 下午2:20
  */
-public class BioSanTracer implements Tracer {
+public class LightTracer implements Tracer {
+
+    /**
+     * 作为客户端运行时的 Reporter
+     */
+    private final Reporter clientReporter;
+
+    /***
+     * 作为服务端运行时的 Reporter
+     */
+    private final Reporter serverReporter;
+
+    public LightTracer() {
+        this.clientReporter = null;
+        this.serverReporter = null;
+    }
 
     @Override
     public ScopeManager scopeManager() {

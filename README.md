@@ -10,8 +10,10 @@
 3. 
 
 #### Dev Plan
-1. 埋点采集上报
-2. 
+1. 数据上报模块
+2. 组件埋点机制
+3. 链路透传原理
+4. 采样策略
 
 #### Refer
 - OpenTracing：https://opentracing.io/specification/

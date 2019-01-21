@@ -1,6 +1,6 @@
 package cn.biosan.trace.core.tracer;
 
-import cn.biosan.trace.core.BioSanTracer;
+import cn.biosan.trace.core.LightTracer;
 import cn.biosan.trace.core.context.span.TracerSpanContext;
 import cn.biosan.trace.core.span.TracerSpan;
 
@@ -15,7 +15,7 @@ import cn.biosan.trace.core.span.TracerSpan;
  */
 public abstract class AbstractTracer {
 
-    protected BioSanTracer bioSanTracer;
+    protected LightTracer lightTracer;
 
     public AbstractTracer(String tracerType) {
         this(tracerType,true,true);
