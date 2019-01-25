@@ -44,7 +44,7 @@ public class TraceApplicationTests {
         System.out.println("Loop times:" + (System.currentTimeMillis() - marked) + "ms");
 
         marked = System.currentTimeMillis();
-        /** 非连续方式便利 **/
+        /** 非连续方式遍历 **/
         for (int i = 0; i < 8; i += 1) {
             for (int j = 0; j < 1024 * 1024; j++) {
                 sum = arr[j][i];

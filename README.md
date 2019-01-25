@@ -13,6 +13,9 @@
 1. 数据上报模块
     - Reporter抽象设计
     - Disruptor写磁盘实现
+        - Garbage-free，通过RingBuffer固定内存分配，避免频繁分配对象引起GC以及OMM
+        - onEvent
+    - Appender flush
 2. 组件埋点机制
 3. 链路透传原理
 4. 采样策略

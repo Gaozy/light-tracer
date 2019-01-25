@@ -54,6 +54,10 @@ public class DiskReporterImpl extends AbstractDiskReporter {
             //double check init
             return;
         }
+        // Appender
+
+
+
         //已经存在或者首次创建
         this.isDigestFileInited.set(true);
     }
