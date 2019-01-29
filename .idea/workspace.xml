@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26472de7-5c59-4e88-b653-f32ae72f7551" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/biosan/trace/core/appender/BaseTraceAppender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/biosan/trace/core/appender/TraceAppender.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/biosan/trace/core/reporter/Impl/DiskReporterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/biosan/trace/core/reporter/Impl/DiskReporterImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cn/biosan/trace/TraceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/biosan/trace/TraceApplicationTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,11 +27,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DiskReporterImpl.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DiskReporterImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn/biosan/trace/core/reporter/Impl/DiskReporterImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="49" column="18" lean-forward="true" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
+            <state relative-caret-position="199">
+              <caret line="53" column="31" lean-forward="true" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1147#1148#0" expanded="true" />
@@ -40,11 +41,36 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="TraceAppender.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/biosan/trace/core/appender/TraceAppender.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseTraceAppender.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/biosan/trace/core/appender/BaseTraceAppender.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="394">
+              <caret line="54" column="59" selection-start-line="54" selection-start-column="59" selection-end-line="54" selection-end-column="59" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#533#534#0" expanded="true" />
+                <element signature="e#585#586#0" expanded="true" />
+                <element signature="e#731#732#0" expanded="true" />
+                <element signature="e#762#763#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="TracerSpan.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn/biosan/trace/core/span/TracerSpan.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
-              <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+              <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
               <folding>
                 <element signature="e#639#640#0" expanded="true" />
                 <element signature="e#669#670#0" expanded="true" />
@@ -92,6 +118,9 @@
         <option value="$PROJECT_DIR$/src/test/java/cn/biosan/trace/TraceApplicationTests.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/cn/biosan/trace/core/reporter/Impl/DiskReporterImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/biosan/trace/core/appender/builder/TraceAppender.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/biosan/trace/core/appender/TraceAppender.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/biosan/trace/core/appender/BaseTraceAppender.java" />
       </list>
     </option>
   </component>
@@ -181,7 +210,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="trace" type="462c0819:PsiDirectoryNode" />
               <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="builder" type="462c0819:PsiDirectoryNode" />
+              <item name="appender" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="light-tracer" type="b2602c69:ProjectViewProjectNode" />
@@ -191,8 +220,8 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="trace" type="462c0819:PsiDirectoryNode" />
               <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="builder" type="462c0819:PsiDirectoryNode" />
-              <item name="XStringBuilder" type="1a9f42e2:ClassTreeNode" />
+              <item name="appender" type="462c0819:PsiDirectoryNode" />
+              <item name="TraceAppender" type="1a9f42e2:ClassTreeNode" />
             </path>
             <path>
               <item name="light-tracer" type="b2602c69:ProjectViewProjectNode" />
@@ -235,17 +264,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="trace" type="462c0819:PsiDirectoryNode" />
               <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="reporter" type="462c0819:PsiDirectoryNode" />
-              <item name="AbstractDiskReporter" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="light-tracer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="light-tracer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="trace" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
               <item name="span" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -258,27 +276,6 @@
               <item name="core" type="462c0819:PsiDirectoryNode" />
               <item name="span" type="462c0819:PsiDirectoryNode" />
               <item name="TracerSpan" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="light-tracer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="light-tracer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="trace" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="light-tracer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="light-tracer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="trace" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="StringUtils" type="1a9f42e2:ClassTreeNode" />
             </path>
             <path>
               <item name="light-tracer" type="b2602c69:ProjectViewProjectNode" />
@@ -422,7 +419,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -534,7 +531,7 @@
       <workItem from="1547649830634" duration="3155000" />
       <workItem from="1548053417976" duration="14349000" />
       <workItem from="1548231807078" duration="2520000" />
-      <workItem from="1548295541648" duration="12792000" />
+      <workItem from="1548295541648" duration="21404000" />
     </task>
     <servers />
   </component>
@@ -547,7 +544,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32816000" />
+    <option name="totallyTimeSpent" value="41428000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="331" y="1103" width="1280" height="777" extended-state="6" />
@@ -564,10 +561,10 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.32876712" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32943925" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.1814301" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.23744293" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19547658" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19547658" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -628,13 +625,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/biosan/trace/core/reporter/Reporter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/biosan/trace/core/reporter/AbstractReporter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -1003,7 +993,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/biosan/trace/core/span/TracerSpan.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
-          <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
           <folding>
             <element signature="e#639#640#0" expanded="true" />
             <element signature="e#669#670#0" expanded="true" />
@@ -1015,12 +1005,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/biosan/trace/core/reporter/Impl/DiskReporterImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="49" column="18" lean-forward="true" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
+        <state relative-caret-position="199">
+          <caret line="53" column="31" lean-forward="true" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1147#1148#0" expanded="true" />
             <element signature="e#1183#1184#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/biosan/trace/core/appender/TraceAppender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/biosan/trace/core/appender/BaseTraceAppender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="54" column="59" selection-start-line="54" selection-start-column="59" selection-end-line="54" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#533#534#0" expanded="true" />
+            <element signature="e#585#586#0" expanded="true" />
+            <element signature="e#731#732#0" expanded="true" />
+            <element signature="e#762#763#0" expanded="true" />
           </folding>
         </state>
       </provider>

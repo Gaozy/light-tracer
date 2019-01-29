@@ -54,7 +54,7 @@ public class DiskReporterImpl extends AbstractDiskReporter {
             //double check init
             return;
         }
-        // Appender
+        // init Appender
 
 
 
