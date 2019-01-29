@@ -39,6 +39,9 @@ public class DiskReporterImpl extends AbstractDiskReporter {
             // 初始化磁盘摘要log文件
             this.initDigestFile();
         }
+        // 打印日志
+
+
     }
 
     public String getDigestLogType() {
@@ -54,8 +57,8 @@ public class DiskReporterImpl extends AbstractDiskReporter {
             //double check init
             return;
         }
-        // init Appender
-
+        /**  init Appender  **/
+        // TODO 单例 AppenderManager 管理 Appender
 
 
         //已经存在或者首次创建

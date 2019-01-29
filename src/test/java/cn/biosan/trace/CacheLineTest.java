@@ -1,13 +1,19 @@
 package cn.biosan.trace;
 
 import org.junit.Test;
-import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
 
-//@RunWith(SpringRunner.class)
+/**
+ * Developing a program as a product. 
+ * @Description:
+ * @Project light-tracer
+ * @Package cn.biosan.trace
+ * @author gaozhenyu@biosan.cn
+ * @date 2019/1/19 下午5:01
+ */
 @SpringBootTest
-public class TraceApplicationTests {
+public class CacheLineTest {
+
 
     //考虑一般缓存行大小是64字节，一个 long 类型占8字节
     static long[][] arr;
@@ -55,4 +61,3 @@ public class TraceApplicationTests {
     }
 
 }
-
