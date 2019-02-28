@@ -1,4 +1,6 @@
-package cn.biosan.trace.core.appender;
+package cn.biosan.trace.core.appender.impl;
+
+import cn.biosan.trace.core.appender.TraceAppender;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -11,7 +13,7 @@ import java.util.concurrent.ConcurrentHashMap;
  * @author gaozhenyu@biosan.cn
  * @date 2019/1/29 下午2:26
  */
-public class BaseTraceAppender implements TraceAppender {
+public class CompositeTraceAppender implements TraceAppender {
 
     /**
      * 置入 appender多种实现均可放入此map

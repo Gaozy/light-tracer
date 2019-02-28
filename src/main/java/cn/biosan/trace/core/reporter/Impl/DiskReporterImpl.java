@@ -1,8 +1,11 @@
 package cn.biosan.trace.core.reporter.Impl;
 
+import cn.biosan.trace.core.appender.TraceAppender;
+import cn.biosan.trace.core.appender.impl.BaseTraceAppender;
+import cn.biosan.trace.core.manager.AppenderManager;
+import cn.biosan.trace.core.manager.TracerDigestReporterAsyncManager;
 import cn.biosan.trace.core.reporter.AbstractDiskReporter;
 import cn.biosan.trace.core.span.TracerSpan;
-import cn.biosan.trace.core.utils.StringUtils;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 
@@ -40,7 +43,8 @@ public class DiskReporterImpl extends AbstractDiskReporter {
             this.initDigestFile();
         }
         // 打印日志
-
+        AppenderManager asyncDigestManager = TracerDigestReporterAsyncManager.getTracerDigestReporterAsyncManager();
+        asyncDigestManager.append(span);
 
     }
 
@@ -50,16 +54,20 @@ public class DiskReporterImpl extends AbstractDiskReporter {
 
 
     /***
-     * 磁盘文件初始化创建完成
+     * appender初始化
      */
     private synchronized void initDigestFile() {
         if (this.isDigestFileInited.get()) {
             //double check init
             return;
         }
-        /**  init Appender  **/
-        // TODO 单例 AppenderManager 管理 Appender
+        /** 日志保留相关config设计 **/
 
+        /** Appender抽象设计,不同场景不同实现  **/
+        TraceAppender traceAppender = BaseTraceAppender.createBaseTraceAppender("BaseAppenderLog");
+        /** 单例 AppenderManager 统一管理 Appender **/
+        AppenderManager appenderManager = TracerDigestReporterAsyncManager.getTracerDigestReporterAsyncManager();
+        appenderManager.addAppender("gaozy-logtype",traceAppender);
 
         //已经存在或者首次创建
         this.isDigestFileInited.set(true);

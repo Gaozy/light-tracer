@@ -16,9 +16,12 @@
         - Garbage-free，通过RingBuffer固定内存分配，避免频繁分配对象引起GC以及OMM
         - onEvent
     - Appender flush
+    - Encoder 数据编解码方式抽象
 2. 组件埋点机制
 3. 链路透传原理
 4. 采样策略
+
+#### 整体流程图
 
 #### Refer
 - OpenTracing：https://opentracing.io/specification/

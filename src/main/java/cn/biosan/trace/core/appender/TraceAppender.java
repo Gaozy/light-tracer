@@ -3,7 +3,7 @@ package cn.biosan.trace.core.appender;
  * Developing a program as a product. 
  * @Description: Appender的顶层抽象，日志IO实际操作者
  * @Project light-tracer
- * @Package cn.biosan.trace.core.appender.builder
+ * @Package cn.biosan.trace.core.appender
  * @author gaozhenyu@biosan.cn
  * @date 2019/1/29 下午2:16
  */
